@@ -1,0 +1,32 @@
+{
+  "name": "@appdom/appdom",
+  "version": "0.0.0",
+  "description": "AppDOM is a collection of DOM interfaces.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AppDOM/AppDOM.git"
+  },
+  "keywords": [
+    "app",
+    "dom",
+    "mvc"
+  ],
+  "author": "Michaelangelo Jong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AppDOM/AppDOM/issues"
+  },
+  "homepage": "https://github.com/AppDOM/AppDOM#readme",
+  "devDependencies": {
+    "@types/node": "^7.0.21",
+    "source-map-loader": "^0.2.1",
+    "ts-loader": "^2.1.0",
+    "tslib": "^1.7.1",
+    "typescript": "^2.3.2",
+    "webpack": "^2.5.1"
+  }
+}
