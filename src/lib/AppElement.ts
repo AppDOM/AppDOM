@@ -1,12 +1,21 @@
 import {AppNode} from './AppNode';
+import {AppText} from './AppText';
 import {AppElementNode} from './AppElementNode';
 
 export class AppElement extends AppElementNode {
   element : HTMLElement;
   children : AppNode[] = [];
 
-  constructor(tagName : string) {
+  constructor(tagName : string, children? : string | AppNode[]) {
     super(tagName);
+
+    if (Array.isArray(children)) {
+      for (let child of children) {
+        this.appendChild(child);
+      }
+    } else if (children) {
+      this.appendChild(new AppText(children));
+    }
   }
 
   get elementChildren() : AppElementNode[] {

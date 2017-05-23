@@ -3,7 +3,8 @@ var webpack = require('webpack');
 module.exports = {
     entry: {
         AppDOM: './src/index.ts',
-        echo: './src/example/echo.ts'
+        echo: './src/example/echo.ts',
+        list: './src/example/list.ts'
     },
     output: {
         library: "AppDOM",
