@@ -12,13 +12,15 @@ export class AppNode {
     }
   }
 
-  remove() {
+  remove() : AppNode {
     if (this.parent) {
       this.parent.removeChild(this);
     }
+
+    return this;
   }
 
-  insertBefore(sibling : AppNode) {
+  insertBefore(sibling : AppNode) : AppNode {
     let parent = sibling.parent;
     if (parent) {
       this.remove();
@@ -28,9 +30,11 @@ export class AppNode {
 
       this.parent = parent;
     }
+
+    return this;
   }
 
-  insertAfter(sibling : AppNode) {
+  insertAfter(sibling : AppNode) : AppNode {
     let parent = sibling.parent;
     if (parent) {
       this.remove();
@@ -40,9 +44,13 @@ export class AppNode {
 
       this.parent = parent;
     }
+
+    return this;
   }
 
-  appendToDOM(dom : HTMLElement) {
+  appendToDOM(dom : HTMLElement) : AppNode {
     dom.appendChild(this.element);
+
+    return this;
   }
 }
