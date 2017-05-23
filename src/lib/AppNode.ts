@@ -1,24 +1,24 @@
 import {AppElement} from './AppElement';
 
 export class AppNode {
-  element:  HTMLElement | Text;
-  parent: AppElement | null = null;
+  element :  HTMLElement | Text;
+  parent : AppElement | null = null;
 
-  constructor(element: HTMLElement | Text) {
-    if (element instanceof Element || element instanceof Text) {
+  constructor(element : HTMLElement | Text) {
+    if (element instanceof HTMLElement || element instanceof Text) {
       this.element = element;
     } else {
       throw new Error('Cannot construct AppNode');
     }
   }
 
-  remove() : void {
+  remove() {
     if (this.parent) {
       this.parent.removeChild(this);
     }
   }
 
-  insertBefore(sibling : AppNode) : void {
+  insertBefore(sibling : AppNode) {
     let parent = sibling.parent;
     if (parent) {
       this.remove();
@@ -30,7 +30,7 @@ export class AppNode {
     }
   }
 
-  insertAfter(sibling : AppNode) : void {
+  insertAfter(sibling : AppNode) {
     let parent = sibling.parent;
     if (parent) {
       this.remove();
@@ -42,7 +42,7 @@ export class AppNode {
     }
   }
 
-  appendToDOM(dom: HTMLElement) : void {
+  appendToDOM(dom : HTMLElement) {
     dom.appendChild(this.element);
   }
 }

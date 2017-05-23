@@ -7,5 +7,6 @@ export * from './lib/AppText';
 export * from './lib/AppElement';
 
 // defined Elements
+export * from './lib/AppImage';
 export * from './lib/AppInput';
 export * from './lib/AppTextArea';

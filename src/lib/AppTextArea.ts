@@ -2,7 +2,7 @@ import {AppElementNode} from './AppElementNode';
 
 export class AppTextArea extends AppElementNode {
   element : HTMLTextAreaElement;
-  constructor(value: string) {
+  constructor(value : string) {
     super('textarea');
     this.value = value;
   }
@@ -11,7 +11,7 @@ export class AppTextArea extends AppElementNode {
     return this.element.value;
   }
 
-  set value(val: string) {
+  set value(val : string) {
     this.element.value = val;
   }
 
@@ -19,7 +19,7 @@ export class AppTextArea extends AppElementNode {
     return this.element.defaultValue;
   }
 
-  set defaultValue(val: string) {
+  set defaultValue(val : string) {
     this.element.defaultValue = val;
   }
 }

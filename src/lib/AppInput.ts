@@ -2,7 +2,7 @@ import {AppElementNode} from './AppElementNode';
 
 export class AppInput extends AppElementNode {
   element : HTMLInputElement;
-  constructor(type: string = 'text') {
+  constructor(type : string = 'text') {
     super('input');
     this.element.type = type;
   }
@@ -11,7 +11,7 @@ export class AppInput extends AppElementNode {
     return this.element.value;
   }
 
-  set value(val: string) {
+  set value(val : string) {
     this.element.value = val;
   }
 
@@ -19,7 +19,7 @@ export class AppInput extends AppElementNode {
     return this.element.defaultValue;
   }
 
-  set defaultValue(val: string) {
+  set defaultValue(val : string) {
     this.element.defaultValue = val;
   }
 
@@ -27,7 +27,7 @@ export class AppInput extends AppElementNode {
     return this.element.checked;
   }
 
-  set checked(val: boolean) {
+  set checked(val : boolean) {
     this.element.checked = val;
   }
 
@@ -35,7 +35,7 @@ export class AppInput extends AppElementNode {
     return this.element.defaultChecked;
   }
 
-  set defaultChecked(val: boolean) {
+  set defaultChecked(val : boolean) {
     this.element.defaultChecked = val;
   }
 }

@@ -1,8 +1,8 @@
 import {AppNode} from './AppNode';
 
 export class AppText extends AppNode {
-  element: Text;
-  constructor(text: string = '') {
+  element : Text;
+  constructor(text : string = '') {
     super(document.createTextNode(text));
   }
 
@@ -10,7 +10,7 @@ export class AppText extends AppNode {
     return this.element.textContent;
   }
 
-  set text(val: string | null) {
+  set text(val : string | null) {
     this.element.textContent = val;
   }
 }
