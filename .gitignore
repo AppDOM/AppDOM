@@ -56,10 +56,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
-index.js
-index.js.map
-/lib
-/test
-/dist
-/example

@@ -9,13 +9,13 @@
     "removeComments": true,
     "importHelpers": true,
     "downlevelIteration": true,
-    "isolatedModules": true,
 
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
+    "declaration": true,
 
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -35,6 +35,7 @@
       "node"
     ],
 
+    "sourceRoot": "./src",
     "sourceMap": true,
     "inlineSources": true
   },"exclude": [

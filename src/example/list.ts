@@ -38,7 +38,7 @@ export class List extends AppElement {
     this.appendChild(list);
 
     input.addEventListener('change', () => {
-      this.list.appendChild(new ListItem(input.value));
+      list.appendChild(new ListItem(input.value));
       input.value = '';
     }, false);
   }

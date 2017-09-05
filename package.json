@@ -1,6 +1,6 @@
 {
   "name": "@appdom/appdom",
-  "version": "0.0.0",
+  "version": "0.1.2",
   "description": "AppDOM is a collection of DOM interfaces.",
   "main": "index.js",
   "scripts": {

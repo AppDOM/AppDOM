@@ -1,0 +1,1 @@
+{"version":3,"file":"test-file.js","sourceRoot":"/Users/mjong/Development/AppDOM/src/","sources":["test-file.ts"],"names":[],"mappings":";;AAAA;IACE,UAAU,CAAC,cAAK,MAAM,MAAM,CAAC,CAAA,CAAC,EAAE,GAAG,CAAC,CAAA;AAEtC,CAAC;AAEY,QAAA,CAAC,GAAG,IAAI,EAAE,CAAC","sourcesContent":["function test() {\n  setTimeout(()=>{throw 'test';}, 900)\n\n}\n\nexport const n = test();\n"]}
